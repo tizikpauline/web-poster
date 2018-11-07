@@ -2,8 +2,8 @@
 @import "reset.css";
 
 html, body {
-  width: 1140px;
-  height: 10000px;
+  width: 1440px;
+  height: 900px;
   background: #000000;
 }
 
@@ -13,54 +13,56 @@ header {
 
 .logo {
   position: absolute;
-  width: 382.05px;
-  height: 148.65px;
-  left: 528.98px;
+  width: 497px;
+  height: 194px;
+  left: 529px;
   top: 0px;
 }
 
 .slider-image-1 {
-  background-image: url(../images/main_dark.svg);
+  background-image: url(../images/main_dark.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slider-image-2 {
-  background-image: url(../images/dido_2.svg);
+  background-image: url(../images/dido_1.png);
   background-size:  cover;
   background-repeat: no-repeat;
 }
 
 .slider-image-3 {
-  background-image: url(../images/orpheus2.svg);
+  background-image: url(../images/orpheus2.png);
   background-size:  cover;
   background-repeat: no-repeat;
 }
 
-.slider-holder
-        {
-            width: 1440px;
-            height: 100%;
-            overflow: hidden;
-        }
+.slider-holder {
+  width: 1440px;
+  height: 727px;
+  overflow: hidden;
+}
 
-.image-holder
-        {
-            width: 1440px;
-            height: 100%;
-            clear: both;
-            position: relative;
+.image-holder {
+  width: 4320px;
+  height: 727px;
+  clear: both;
+  position: relative;
 
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
 
-.slider-image-1, .slider-image-2, .slider-image-3
-                {   width: 1440px;
-                    position: relative;
-                }
+.slider-image-1, .slider-image-2, .slider-image-3 {
+  width: 1440px;
+  height: 727px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
 
 #slider-image-1:target ~ .image-holder
         {
@@ -69,29 +71,24 @@ header {
 
 #slider-image-2:target ~ .image-holder
         {
-            left: -800px;
+            left: -1440px;
         }
 
 #slider-image-3:target ~ .image-holder
         {
-            left: -1600px;
+            left: -2880px;
         }
 
-.button-holder
-{
 
-    top: -20px;
-}
-
-.slider-change
-{
-
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  border-color: white;
-  background-color: white;
+.slider-change {
+       display: inline-block;
+       float: right;
+       margin-left: 8px;
+       margin-right: 8px;
+       height: 14px;
+       width: 14px;
+       border-radius: 7px;
+       background-color: white;
 }
 
 /* Дидона и Эней */
@@ -128,7 +125,7 @@ color: #FFFFFF;
 width: 427.66px;
 height: 392.2px;
 float: right;
-
+padding-right: 8px;
 font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -142,8 +139,8 @@ color: #FFFFFF;
 }
 h3 {
   height: 56px;
-  padding-top: 600px;
-
+  padding-top: 650px;
+  padding-left: 8px;
   font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -151,6 +148,8 @@ h3 {
   font-size: 48px;
 
   color: #FFFFFF;
+
+
 }
 
 /* Посмотреть афишу */
