@@ -26,13 +26,13 @@ header {
 }
 
 .slider-image-2 {
-  background-image: url(../images/dido_1.png);
+  background-image: url(../images/dido_2.png);
   background-size:  cover;
   background-repeat: no-repeat;
 }
 
 .slider-image-3 {
-  background-image: url(../images/orpheus2.png);
+  background-image: url(../images/orpheus3.png);
   background-size:  cover;
   background-repeat: no-repeat;
 }
@@ -83,6 +83,7 @@ header {
 .slider-change {
        display: inline-block;
        float: right;
+
        margin-left: 8px;
        margin-right: 8px;
        height: 14px;
@@ -148,8 +149,6 @@ h3 {
   font-size: 48px;
 
   color: #FFFFFF;
-
-
 }
 
 /* Посмотреть афишу */
