@@ -1,22 +1,23 @@
 @import "font.css";
 @import "reset.css";
 
-html, body {
-  width: 1440px;
-  height: 900px;
-  background: #000000;
+body {
+  width: 100%;
+  background-color: #000000;
 }
 
 header {
-  height: 173px;
+  display: flex;
+  flex-direction: row;
+
+  height: 48px;
 }
 
 .logo {
-  position: absolute;
-  width: 497px;
-  height: 194px;
-  left: 529px;
-  top: 0px;
+  margin-left: -20px;
+  
+  width: 120px;
+  height: 46px;
 }
 
 .slider-image-1 {
@@ -38,14 +39,17 @@ header {
 }
 
 .slider-holder {
-  width: 1440px;
-  height: 727px;
+  width: 320px;
+  height: 190px;
+
+
   overflow: hidden;
 }
 
 .image-holder {
-  width: 4320px;
-  height: 727px;
+  width: 960px;
+  height: 190px;
+
   clear: both;
   position: relative;
 
@@ -56,8 +60,8 @@ header {
 }
 
 .slider-image-1, .slider-image-2, .slider-image-3 {
-  width: 1440px;
-  height: 727px;
+  width: 320px;
+
   float: left;
   margin: 0px;
   padding: 0px;
@@ -71,12 +75,12 @@ header {
 
 #slider-image-2:target ~ .image-holder
         {
-            left: -1440px;
+            left: -320px;
         }
 
 #slider-image-3:target ~ .image-holder
         {
-            left: -2880px;
+            left: -640px;
         }
 
 
@@ -86,15 +90,242 @@ header {
 
        margin-left: 8px;
        margin-right: 8px;
-       height: 14px;
-       width: 14px;
+       margin-bottom: 7px;
+       height: 10px;
+       width: 10px;
        border-radius: 7px;
        background-color: white;
 }
 
-/* Дидона и Эней */
 .dido {
-  width: 709.08px;
+
+  float: right;
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 40px;
+  text-align: right;
+
+  color: #FFFFFF;
+}
+
+.orpheus {
+  /* Орфей и Эвридика */
+  float: right;
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 40px;
+  text-align: right;
+
+  color: #FFFFFF;
+}
+
+.opera {
+  float: right;
+  padding-right: 8px;
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 40px;
+  text-align: right;
+
+  color: #FFFFFF;
+}
+
+h3 {
+  padding-top: 150px;
+
+  padding-left: 8px;
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #FFFFFF;
+}
+
+.info p {
+  width: 80%;
+
+  padding-left: 8px;
+
+  font-family: "FuturaLightC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #FFFFFF;
+}
+
+footer p {
+  height: 25px;
+
+  padding-left: 8px;
+
+  font-family: "FuturaLightC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #FFFFFF;
+}
+
+.sculpture {
+  margin-top: -200px;
+  float: right;
+  width: 100px;
+  height: 300px;
+}
+
+.insta {
+
+
+  width: 16px;
+  height: 16px;
+}
+
+.facebook {
+
+  padding-left: 10px;
+
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  body{
+    width: 768px;
+  }
+
+  header {
+    height: 56px;
+  }
+
+  .logo{
+    width: 510px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+
+  header {
+    height: 173px;
+  }
+
+  .logo {
+    width: 497px;
+    height: 194px;
+  }
+
+  .slider-image-1 {
+    background-image: url(../images/main_dark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .slider-image-2 {
+    background-image: url(../images/dido_2.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+  }
+
+  .slider-image-3 {
+    background-image: url(../images/orpheus3.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+  }
+
+  .slider-holder {
+    width: 1440px;
+    height: 740px;
+    overflow: hidden;
+  }
+
+  .image-holder {
+    width: 4320px;
+    height: 740px;
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+
+  .slider-image-1, .slider-image-2, .slider-image-3 {
+    width: 1440px;
+    height: 740px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+
+  #slider-image-1:target ~ .image-holder
+          {
+              left: 0px;
+          }
+
+  #slider-image-2:target ~ .image-holder
+          {
+              left: -1440px;
+          }
+
+  #slider-image-3:target ~ .image-holder
+          {
+              left: -2880px;
+          }
+
+
+  .slider-change {
+         display: inline-block;
+         float: right;
+
+         margin-left: 10px;
+         margin-right: 10px;
+         margin-bottom: 10px;
+
+         height: 24px;
+         width: 24px;
+         border-radius: 24px;
+         background-color: white;
+  }
+
+  /* Дидона и Эней */
+  .dido {
+    width: 709.08px;
+    height: 269.98px;
+    float: right;
+    font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 140px;
+    text-align: right;
+
+    color: #FFFFFF;
+  }
+
+  .orpheus {
+    /* Орфей и Эвридика */
+  width: 686.09px;
   height: 269.98px;
   float: right;
   font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
@@ -105,224 +336,117 @@ header {
   text-align: right;
 
   color: #FFFFFF;
-}
+  }
 
-.orpheus {
-  /* Орфей и Эвридика */
-width: 686.09px;
-height: 269.98px;
-float: right;
-font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 140px;
-text-align: right;
-
-color: #FFFFFF;
-}
-
-.opera {
-width: 427.66px;
-height: 392.2px;
-float: right;
-padding-right: 8px;
-font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 140px;
-text-align: right;
-
-color: #FFFFFF;
-
-
-}
-h3 {
-  height: 56px;
-  padding-top: 650px;
-  padding-left: 8px;
+  .opera {
+  width: 427.66px;
+  height: 392.2px;
+  float: right;
+  padding-right: 8px;
   font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 48px;
+  font-size: 140px;
+  text-align: right;
 
   color: #FFFFFF;
+  }
+
+  h3 {
+    height: 56px;
+    padding-top: 650px;
+    padding-left: 8px;
+    font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 48px;
+
+    color: #FFFFFF;
+  }
+
+  .title1 {
+  margin: 0;
+  position: absolute;
+  height: 900px;
+  width: 1440px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: black;
+  }
+
+  .title2 {
+    margin: 0;
+  position: absolute;
+  height: 900px;
+  width: 1440px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  }
+
+  .info p {
+  font-family: "FuturaLightC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #FFFFFF;
+
+  position: absolute;
+  width: 1113.88px;
+  height: 381.45px;
+  left: 29.35px;
+  top: 1067.78px;
+  }
+
+  .footer {
+  position: absolute;
+  width: 451.4px;
+  height: 25.02px;
+  left: 29.35px;
+  top: 1725px;
+
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+
+  color: #FFFFFF;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .sculpture {
+    margin-top: -150px;
+    float: right;
+    width: 385px;
+    height: 984px;
+  }
+
+  .insta {
+    position: absolute;
+    left: 1300px;
+    top: 1730px;
+  width: 44px;
+  height: 44px;
+  }
+
+  .facebook {
+    position: absolute;
+    padding-left: 10px;
+
+    top: 1730px;
+    left: 1360px;
+    width: 44px;
+    height: 44px;
+  }
+
 }
-
-/* Посмотреть афишу */
-
-position: absolute;
-width: 383px;
-height: 56px;
-left: 29.35px;
-top: 779.49px;
-
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 48px;
-
-color: #FFFFFF;
-
-
-/* MacBook Pro 2.2 */
-
-position: relative;
-width: 1440px;
-height: 900px;
-
-background: #FFFFFF;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 0px;
-
-background: #000000;
-
-
-/* logo_01_new_white */
-
-position: absolute;
-width: 382.05px;
-height: 148.65px;
-left: 528.98px;
-top: 0px;
-
-background: url(logo_01_new_white.png);
-
-
-/* Rectangle 2 */
-
-position: absolute;
-width: 1440px;
-height: 727px;
-left: 0px;
-top: 173px;
-
-background: #C4C4C4;
-
-
-/* main_blue */
-
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 173px;
-
-background: url(main_blue.png);
-
-
-/* main_dark */
-
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 173px;
-
-background: url(main_dark.png);
-
-
-/* Ellipse */
-
-position: absolute;
-width: 30px;
-height: 30px;
-left: 1399.79px;
-top: 844.08px;
-
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
-
-
-/* Ellipse */
-
-position: absolute;
-width: 30px;
-height: 30px;
-left: 1267.46px;
-top: 844.08px;
-
-background: #FFFFFF;
-
-
-/* Ellipse */
-
-position: absolute;
-width: 30px;
-height: 30px;
-left: 1311.57px;
-top: 844.08px;
-
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
-
-
-/* Ellipse */
-
-position: absolute;
-width: 30px;
-height: 30px;
-left: 1355.68px;
-top: 844.08px;
-
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
-
-
-/* Опера внутри тебя. */
-
-position: absolute;
-width: 427.66px;
-height: 392.2px;
-left: 1002.13px;
-top: 265.69px;
-
-font-family: Futura-Normal;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 140px;
-text-align: right;
-
-color: #FFFFFF;
-
-
-
-/* Rectangle 3 */
-
-position: absolute;
-width: 425px;
-height: 83px;
-left: 8.35px;
-top: 761.08px;
-
-background: rgba(0, 0, 0, 0.3);
-border: 4px solid #FFFFFF;
-box-sizing: border-box;
-
-
-/* Посмотреть афишу */
-
-position: absolute;
-width: 393px;
-height: 50px;
-left: 24.35px;
-top: 782.13px;
-
-font-family: Futura-Normal;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 48px;
-
-color: #FFFFFF;
